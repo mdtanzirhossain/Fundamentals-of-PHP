@@ -44,14 +44,26 @@
         <label for="url"></label></br>
         <input type="url" name="url" id=""> -->
 
-        <label for="file">Upload Image</label></br>
+        <!-- <label for="file">Upload Image</label></br> -->
         <!-- <input type="image" src="" alt=""> -->
 
-        <input type="file" name="image" id=""> </br>
-<!-- image is amultidimensional array. echo will not work on it -->
-        <label for="month">Month</label></br>
+        <!-- <input type="file" name="image" id=""> </br> -->
+        <!-- image is amultidimensional array. echo will not work on it -->
+        <!-- <label for="month">Month</label></br>
         <input type="month" name="month" id=""></br>
         <input type="hidden" name="ip" value="<?php echo $_SERVER['REMOTE_PORT']?>">
+
+        <input type="range" name="range" min="1" max="100" id="">
+        <input type="search" name="search" id=""> -->
+        <select name="course_name" id="" multiple>
+            <option value="0">Select Your Course</option>
+            <option value="wp" selected>Wordpress</option>
+            <option value="lv">Laravel</option>
+        </select>
+
+        <!-- <input type="week" name="week" id="">
+        <input type="datetime-local" name="dateTime" id="">
+        <input type="time" name="" id=""> -->
         <button type="submit">Submit</button>
         <input type="reset" value="reset">
     </form>

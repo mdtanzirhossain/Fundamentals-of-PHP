@@ -20,7 +20,12 @@
 // $url = $_POST["url"];
 // $image = $_FILES['image'];
 // $month = $_POST['month'];
-$ip = $_POST['ip'];
+// $ip = $_POST['ip'];
+// $price = $_POST['range'];
+// $search = $_POST['search'];
+// $week = $_POST['week'];
+// $dateTime = $_POST['dateTime'];
+$course_name = $_POST['course_name'];
 // echo $bestTeacher; is not applicablen because it does not work on array
 // var_dump($bestTeacher)."</br>";
 // echo "</br>".$course_fee."</br>";
@@ -30,5 +35,9 @@ $ip = $_POST['ip'];
 // echo $time."</br>";
 // echo $url."</br>";
 // var_dump($image)."</br>";
-echo $ip;
+// echo $ip."</br>";
+// echo $price."</br>";
+// echo $search."</br>";
+// echo $dateTime."</br>";
+var_dump($course_name) ."</br>";
 ?>
