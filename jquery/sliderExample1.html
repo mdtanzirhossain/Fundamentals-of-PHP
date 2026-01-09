@@ -12,10 +12,15 @@
 <body>
 
 
-    <div class="slider" style = "width: 500px; height: 500px; color: blue; background-color: burlywood;">
+    <div class="one" style = "display: none; width: 200px; height: 200px; color: blue; background-color: burlywood;">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae non ut libero eligendi mollitia dolorum numquam placeat, ad rem, aspernatur laborum fugiat maxime praesentium aliquam molestiae. Sequi, dicta repudiandae?</p>
     </div>
-    <div id="ani" style="position: absolute; width: 100px; height: 100px; background-color: blue;">Hello</div>
+    <div class="two" style = "display: none; width: 200px; height: 200px; color: blue; background-color: burlywood;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae non ut libero eligendi mollitia dolorum numquam placeat, ad rem, aspernatur laborum fugiat maxime praesentium aliquam molestiae. Sequi, dicta repudiandae?</p>
+    </div>
+    <div class="three" style = "display: none; width: 200px; height: 200px; color: blue; background-color: burlywood;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae non ut libero eligendi mollitia dolorum numquam placeat, ad rem, aspernatur laborum fugiat maxime praesentium aliquam molestiae. Sequi, dicta repudiandae?</p>
+    </div>
     <h1 id="tanzir">Tanzir is a web developer</h1>
     <!-- <button id="show">Hide</button>
     <button id="hide">Show</button> -->
@@ -25,15 +30,18 @@
 
 
 $(document).ready(function(){
-    // $(".slider").fadeOut(1000);
-    // $(".slider").fadeIn(1000);
-    $("#ani").animate({
-        left:'1000px',
-        opacity:'.2',
-        width:'30px',
-        height :'50px'
-    });
-});
+    $(".one").slideDown(1000);
+    $(".two").slideDown(1000);
+    $(".three").slideDown(1000);
+
+    $(".one").slideUp(1000);
+    $(".two").slideUp(1000);
+    $(".three").slideUp(1000);
+    
+
+    
+
+})
     // $(document).ready(function(){
     //     $("button").click(function(){
     //         $("#tanzir").toggle(1000);
