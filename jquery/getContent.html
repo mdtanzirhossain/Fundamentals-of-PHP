@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ajax jquery cdn -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
+    <script src="jquery.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+<!-- Content can be get by 
+ 1. text()
+ 2. html()
+ 3. val()
+ 4. attr() -->
+
+    <div class="slider" style = "width: 500px; height: 500px; color: blue; background-color: burlywood;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae non ut libero eligendi mollitia dolorum numquam placeat, ad rem, aspernatur laborum fugiat maxime praesentium aliquam molestiae. Sequi, dicta repudiandae?</p>
+    </div>
+    <div id="ani" style="position: absolute; width: 100px; height: 100px; background-color: blue;">Hello</div></br>
+    </br></br></br></br><h1 id="tanzir">Tanzir is a web developer</h1></br>
+    <input type="text" name="name" id="name">
+    <a href="mamurjor.com"></a>
+    <button id="change">Button</button>
+    <!-- <button id="show">Hide</button>
+    <button id="hide">Show</button> -->
+    <!-- <button>Toggle</button> -->
+    <!-- jquery is javascript library -->
+</body>
+<script>
+
+
+$(document).ready(function(){
+    // $("#change").click(function(){
+    //     alert($('.slider').text());
+    // })
+    $("#change").click(function(){
+        alert($('.slider').html());
+    })
+    // $("#change").click(function(){
+    //     alert($('#name').val());
+    // })
+    // $("#change").click(function(){
+    //     alert($('a').attr("href"));
+    // })
+
+
+    // $(".slider").hide(10000, function(){
+    //     alert("Time is up");
+    // })
+
+    // $(".slider").fadeOut(1000);
+    // $(".slider").fadeIn(1000);
+    // $("#ani").animate({
+    //     left:'1000px',
+    //     opacity:'.2',
+    //     width:'30px',
+    //     height :'50px'
+    // });
+});
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("#tanzir").toggle(1000);
+    //     })
+    // })
+
+
+    
+
+
+    // $(document).ready(
+    // function(){
+    //     $('#show').click(
+    //         function(){
+    //             // alert("Hello World");
+    //             // $("h1").hide();
+    //             $(this).hide();
+    //         }
+    //     );
+            
+    //     }
+    
+    // );
+
+    // $(document).ready(
+    //     function(){
+    //          alert("Hello World");
+    //     }
+    // ) 
+    // $(document).ready(
+    //     function(){
+    //          let username ="Tanzir";
+    //          alert(username);
+    //     }
+    // ) 
+// selector 1. Id 2. Class 3. All html tags
+
+</script>
+<script>
+    // $(document).ready(
+    //     function(){
+    //         $("#hide").click(
+    //             function(){
+    //                 $("#show").show();
+    //             }
+    //         )
+    //     }
+    // )
+
+</script>
+</body>
+</html>
