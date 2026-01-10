@@ -21,33 +21,39 @@
     </div>
     <div id="ani" style="position: absolute; width: 100px; height: 100px; background-color: blue;">Hello</div></br>
     </br></br></br></br><h1 id="tanzir">Tanzir is a web developer</h1></br>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" placeholder="Please insert text">
     <a href="mamurjor.com"></a>
-    <button id="change">Button</button>
-    <button type="set">Set Text</button>
-    <button type="get">Get Text</button>
+    <button id="set">Set Button</button>
+    <button id="get">Get Button</button>
     <!-- <button id="show">Hide</button>
     <button id="hide">Show</button> -->
     <!-- <button>Toggle</button> -->
     <!-- jquery is javascript library -->
+     <span></span>
 </body>
 <script>
 
+
 $(document).ready(function(){
+    $("#set").click(function(){
+        $("#name").val("print text");
+    });
+    $("#get").click(function(){
+        alert($("#name").val());
+    });
+    $("#get").click(function(){
+        alert($("a").attr("href"));
+    });
+
     // $("#change").click(function(){
     //     alert($('.slider').text());
     // })
     // $("#change").click(function(){
-    //     alert($('.slider').html());
-    // })
-
-// $(document).ready(function(){
-//     // $("#change").click(function(){
-//     //     alert($('.slider').text());
-//     // })
-//     $("#change").click(function(){
-//         alert($('.slider').html());
-//     })
+    //     $('span').text("Hello");
+    // });
+    // $("#change").click(function(){
+    //     $('span').html("<h1>Hello</h1>");
+    // });
     // $("#change").click(function(){
     //     alert($('#name').val());
     // })
