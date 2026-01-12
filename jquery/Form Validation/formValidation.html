@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formsave.php" id="admitform">
+        <label for="fullname">Full name</label></br>
+        <input type="text" name="fullname" id=""></br>
+        <label for="email">Enter Email</label></br>
+        <input type="text" name="username" id=""></br>
+        <label for="url">Fb Url</label></br>
+        <input type="url" name="" id=""></br>
+        <label for="birthdate">Birthday</label></br>
+        <input type="text" name="birthdate" id=""></br>
+        <label for="coursefee">Course Fee</label></br>
+        <input type="text" name="coursefee" id=""></br>
+        <label for="password">Password</label></br>
+        <input type="password" name="password" id="newpassword"></br>
+        <label for="password">Again Password</label></br>
+        <input type="password" name="againpassword" id=""></br>
+        <button type="submit">Save</button></br>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+   <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script> -->
+    <script>
+    // At least one capital letter
+    $.validator.addMethod("capitalLetter", function(value, element) {
+        return this.optional(element) || /[A-Z]/.test(value);
+    }, "Password must contain at least one capital letter");
+
+    // At least one number
+    $.validator.addMethod("oneNumber", function(value, element) {
+        return this.optional(element) || /[0-9]/.test(value);
+    }, "Password must contain at least one number");
+
+    // At least one special character
+    $.validator.addMethod("specialChar", function(value, element) {
+        return this.optional(element) || /[!@#$%^&*(),.?\":{}|<>]/.test(value);
+    }, "Password must contain at least one special character");
+</script>
+
+   <script>
+        $("#admitform").validate({ 
+            rules:{
+                fullname:{
+                    required:true,
+                    text: true
+                },
+                username:{
+                    required:true,
+                    email: true
+                },
+                url:{
+                    required:true,
+                    url:true
+                    
+                },
+                birthdate:{
+                    required:true,
+                    date:true
+                },
+                coursefee:{
+                    required:true,
+                    number:true,
+                    // min:20000,
+                    // max:30000
+                    range:[30000, 50000]
+                },
+                password:{
+                    required:true,
+                    // minlength:8
+                    rangelength:[8,12],
+                    
+                    specialChar: true,
+                    capitalLetter:true,
+                    oneNumber:true
+                },
+                againpassword:{
+                    required: true,
+                    equalTo:"#newpassword"
+                }
+            }
+        })
+    </script>
+</body>
+</html>

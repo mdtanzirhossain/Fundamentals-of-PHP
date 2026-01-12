@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ajax jquery cdn -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
+    <script src="jquery.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+<!-- Jquery built in method can be get by 
+ 1. append()
+ 2. prepend()
+ 3. after()
+ 4. before() -->
+
+    <div class="slider" style = "width: 500px; height: 500px; color: blue; background-color: burlywood;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas beatae non ut libero eligendi mollitia dolorum numquam placeat, ad rem, aspernatur laborum fugiat maxime praesentium aliquam molestiae. Sequi, dicta repudiandae?</p>
+    </div>
+    <div id="ani" style="position: absolute; width: 100px; height: 100px; background-color: blue;">Hello</div></br>
+    </br></br></br></br><h1 id="tanzir">Tanzir is a web developer</h1></br>
+    <input type="text" name="name" id="name" placeholder="Please insert text">
+    <a href="mamurjor.com"></a>
+    <button id="set">Set Button</button>
+    <button id="get">Get Button</button>
+    <button class="add">Add Item</button>
+    <!-- <button id="show">Hide</button>
+    <button id="hide">Show</button> -->
+    <!-- <button>Toggle</button> -->
+    <!-- jquery is javascript library -->
+     <span></span>
+     <ol>
+        <li>New list</li>
+     </ol>
+</body>
+<script>
+
+
+$(document).ready(function(){
+
+    $(".add").click(function(){
+        $("ol").append("<li>New Item</li>");
+    });
+
+    // $("#set").click(function(){
+    //     $("#name").val("print text");
+    // });
+    // $("#get").click(function(){
+    //     alert($("#name").val());
+    // });
+    // $("#get").click(function(){
+    //     alert($("a").attr("href"));
+    // });
+
+    // $("#change").click(function(){
+    //     alert($('.slider').text());
+    // })
+    // $("#change").click(function(){
+    //     $('span').text("Hello");
+    // });
+    // $("#change").click(function(){
+    //     $('span').html("<h1>Hello</h1>");
+    // });
+    // $("#change").click(function(){
+    //     alert($('#name').val());
+    // })
+    // $("#change").click(function(){
+    //     alert($('a').attr("href"));
+    // })
+
+
+    // $(".slider").hide(10000, function(){
+    //     alert("Time is up");
+    // })
+
+    // $(".slider").fadeOut(1000);
+    // $(".slider").fadeIn(1000);
+    // $("#ani").animate({
+    //     left:'1000px',
+    //     opacity:'.2',
+    //     width:'30px',
+    //     height :'50px'
+    // });
+});
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("#tanzir").toggle(1000);
+    //     })
+    // })
+
+
+    
+
+
+    // $(document).ready(
+    // function(){
+    //     $('#show').click(
+    //         function(){
+    //             // alert("Hello World");
+    //             // $("h1").hide();
+    //             $(this).hide();
+    //         }
+    //     );
+            
+    //     }
+    
+    // );
+
+    // $(document).ready(
+    //     function(){
+    //          alert("Hello World");
+    //     }
+    // ) 
+    // $(document).ready(
+    //     function(){
+    //          let username ="Tanzir";
+    //          alert(username);
+    //     }
+    // ) 
+// selector 1. Id 2. Class 3. All html tags
+
+</script>
+<script>
+    // $(document).ready(
+    //     function(){
+    //         $("#hide").click(
+    //             function(){
+    //                 $("#show").show();
+    //             }
+    //         )
+    //     }
+    // )
+
+</script>
+</body>
+</html>

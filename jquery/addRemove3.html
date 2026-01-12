@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ajax jquery cdn -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
+    <script src="jquery.min.js"></script>
+    
+    <title>Document</title>
+    <style>
+.box{
+    width: 200px; height: 200px; background-color: aqua;
+}
+
+.changedbox{
+    width: 200px; height: 200px; background-color: seagreen;
+}
+    </style>
+
+</head>
+<body>
+<div class="field_wrapper">
+    <div class="box"></div>
+    <!-- <div class="changedbox"></div> -->
+    
+</div>
+ <!-- <button>Button to Remove Div</button> -->
+ <!-- <button class="remove">Button to Remove CSS Class</button>
+ <button class="add">Button to Add CSS Class</button> -->
+ <button class="change">Color Change</button>
+<script>
+$(document).ready(function(){
+
+    //  $(".change").click(function(){
+    //     $("div").css("background-color","blue");
+    //     $("div").css("width","200px");
+    //     $("div").css("height","100px");
+    // });
+    //  $(".change").click(function(){
+    //     $("div").removeClass("box");
+    //     $("div").addClass("changedbox");
+        
+    // });
+     $(".change").click(function(){
+        // $("div").removeClass("box");
+        $("div").toggleClass("changedbox");
+        
+    });
+    // $("button").click(function(){
+    //     $("div").remove();
+    // });
+
+    });
+    
+    
+    
+
+</script>
+</body>
+</html>
